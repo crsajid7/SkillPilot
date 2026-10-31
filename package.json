@@ -1,0 +1,28 @@
+{
+  "name": "skillpilot-ai",
+  "version": "1.0.0",
+  "description": "SkillPilot AI - Universal Visual AI Skill Coach",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n \"BACKEND,FRONTEND\" -c \"cyan,magenta\" \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "build:backend": "npm --prefix backend run build",
+    "build:frontend": "npm --prefix frontend run build",
+    "build": "npm run build:backend && npm run build:frontend",
+    "start": "npm --prefix backend run start"
+  },
+  "keywords": [
+    "ai",
+    "skill-coach",
+    "gemma",
+    "genai",
+    "computer-vision",
+    "webrtc"
+  ],
+  "author": "SkillPilot AI Contributors",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
